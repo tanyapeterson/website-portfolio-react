@@ -7,13 +7,24 @@ import Modal from "./Modal";
 
 const ContactPage = () => {
     const [status, setStatus] = useState(false);
+    const [messages, setMessage] = useState([])
 
     return (
         <>
             <div className="contact-info-container">
                 <div className="home-container">
-                    <Form />
+                    <Form message={messages} setMessage={setMessage} />
                 </div >
+                <div>
+                    {messages.map(message => {
+                        return <div>
+                            <p>{message.name}</p>
+                            <p>{message.Email}</p>
+                            <p>{message.Message}</p>
+
+                        </div>
+                    })}
+                </div>
 
                 <div className="call-container">
                     <p className="better">

@@ -43,10 +43,10 @@ a:hover {
 
 
 .home-container {
-  max-width: 1650px;
+  max-width: 1350px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
 }
@@ -122,7 +122,7 @@ a:hover {
 
 
 .footer-bar {
-  margin-top: 30px;
+
   margin-left: 50px;
   height: 250px;
   width: 90%;
@@ -148,7 +148,7 @@ a:hover {
   font-size: 20px;
   list-style: none;
   display: flex;
-  gap: 100px;
+  gap: 130px;
 }
 
 
@@ -200,7 +200,7 @@ a:hover {
 
 
 .about-container-2 {
-  margin-top: 50px;
+  margin-top: 20px;
   max-width: 1400px;
   width: 100%;
   display: flex;
@@ -280,6 +280,10 @@ input {
   padding: 10px;
 }
 
+input:focus {
+  background-color: #F0F0F0;
+}
+
 .input-message {
   width: 400px;
   height: 60px;
@@ -296,9 +300,11 @@ input {
 }
 
 .contact-btn {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   cursor: pointer;
-  width: 200px;
+  width: 400px;
   text-align: center;
 }
 
@@ -307,7 +313,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
 
 }
@@ -358,7 +364,7 @@ input {
 .overlay {
   max-width: 600px;
   width: 100%;
-  background-color: #D8D8D8;
+  background-color: #F0F0F0;
   z-index: 999;
 }
 

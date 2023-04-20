@@ -1,15 +1,18 @@
+import { useState } from "react";
 
-import { useRef } from "react";
 import ReuseButton from "./ReuseButton";
 
-const FormPage = () => {
+const FormPage = ({ message, setMessage }) => {
 
-    const inputRef = useRef();
-    const inputMessage = useRef();
-    const inputEmail = useRef();
+    const [inputName, setInputName] = useState("");
+    const [inputMessage, setInputMessage] = useState("");
+    const [inputEmail, setInputEmail] = useState("");
     const submitHandler = (e) => {
         e.preventDefault();
-        alert("Name: " + inputRef.current.value + "Email: " + inputEmail.current.value + "Message: " + inputMessage.current.value)
+        setMessage((message) => [...message, { name: inputName, Email: inputEmail, Message: inputMessage }]);
+        setInputName("")
+        setInputEmail("")
+        setInputMessage("")
     }
     return (
         <>
@@ -24,12 +27,12 @@ const FormPage = () => {
                     <form className="form-container" onSubmit={submitHandler}>
                         <div className="name-box">
                             <label htmlFor="name">Name</label>
-                            <input type="text" placeholder="Your name" id="name" name="name" ref={inputRef} /></div>
+                            <input required type="text" type="text" placeholder="Your name here" id="name" name="name" value={inputName} onChange={(e) => setInputName(e.target.value)} /></div>
                         <div className="email-box"><label htmlFor="email">Email</label>
-                            <input type="email" placeholder="youremail@gmail.com" id="email" name="email" ref={inputEmail} /></div>
+                            <input required type="email" type="email" placeholder="Your email here" id="email" name="email" value={inputEmail} onChange={(e) => setInputEmail(e.target.value)} /></div>
 
                         <div className="message-box"> <label htmlFor="message">Message</label>
-                            <input className="input-message" type="message" placeholder="Say hello!" id="message" name="message" ref={inputMessage} /></div>
+                            <input required type="text" className="input-message" type="message" placeholder="Your message here" id="message" name="message" value={inputMessage} onChange={(e) => setInputMessage(e.target.value)} /></div>
                         <div className="contact-btn">
                             <ReuseButton type="submit" value="submit" >Send</ReuseButton>
                         </div>

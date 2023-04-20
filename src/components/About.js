@@ -23,7 +23,7 @@ const aboutPage = () => {
                 <div className="story-container-2">
                     <h3 className="forward">Fast forward.</h3>
                     <p className="story-txt-2">
-                        For as long as I can remember I have been drawn to creating things on the computer. Whether that is something on Microsoft Paint, Powerpoint or even Word. Just sitting by my computer and creating something just gets me into a state of total flow.
+                        I would love to use my passion for the creative, design and visuals to help you get the most out of your business. Let us be creative toghether!
                     </p></div>
 
 
