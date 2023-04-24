@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
-const navBar = () => {
+
+const navBar = () => { //this is the navbar function with all the links to different pages using the Link function from the react-dom library
     return (
         <nav className="nav">
             <Link to="/" className="nav-title">tp.</Link>

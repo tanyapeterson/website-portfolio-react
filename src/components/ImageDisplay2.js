@@ -9,3 +9,5 @@ const imageDisplay2 = () => {
 };
 
 export default imageDisplay2;
+
+//this is the function for the second image 

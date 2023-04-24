@@ -20,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+// the main project funtion with all the imported pages 

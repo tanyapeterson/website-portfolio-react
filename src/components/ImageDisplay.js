@@ -8,3 +8,5 @@ const imageDisplay = () => {
 };
 
 export default imageDisplay;
+
+//this is the function for the rose image 

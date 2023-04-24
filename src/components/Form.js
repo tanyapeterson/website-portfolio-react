@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState } from "react";// using this react hook to give a reactive value to my contact form.
 
 import ReuseButton from "./ReuseButton";
 
-const FormPage = ({ message, setMessage }) => {
+const FormPage = ({ message, setMessage }) => { //"message" for the main message in the input fields and "setMessage" for the new info-input after the click
 
-    const [inputName, setInputName] = useState("");
-    const [inputMessage, setInputMessage] = useState("");
-    const [inputEmail, setInputEmail] = useState("");
-    const submitHandler = (e) => {
+    const [inputName, setInputName] = useState(""); //"inputName" for the main/ original name input and setInputName for the name input in the form-input field
+    const [inputMessage, setInputMessage] = useState(""); //read description above
+    const [inputEmail, setInputEmail] = useState("");// read description above
+    const submitHandler = (e) => { //function that will present form data if the form is validated
         e.preventDefault();
         setMessage((message) => [...message, { name: inputName, Email: inputEmail, Message: inputMessage }]);
         setInputName("")

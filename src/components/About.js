@@ -1,9 +1,11 @@
 import ImageDisplay2 from "./ImageDisplay2";
 import ImageDisplay3 from "./ImageDisplay3";
 
+//importing images from separate image-functions
 
+//this is the "about" function
 const aboutPage = () => {
-    return (
+    return ( //returning a jsx-file that will be output and displayed i the "App" function
         <>
             <div className="about-container-1">
                 <div className="story-container">

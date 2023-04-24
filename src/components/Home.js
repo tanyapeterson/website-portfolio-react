@@ -1,8 +1,8 @@
 
 import ReuseButton from "./ReuseButton";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; //importing this function from the react-dom-library to make the linking between pages work
 import ImageDisplay from "./ImageDisplay";
-const homePage = () => {
+const homePage = () => { // this is the "home" function
     return (
         <>
             <div className="home-container">

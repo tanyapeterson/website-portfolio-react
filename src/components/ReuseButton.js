@@ -6,3 +6,5 @@ const reusableButton = ({ children }) => {
 };
 
 export default reusableButton;
+
+// a function for a reusable button that I have used several times in this project
