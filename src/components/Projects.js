@@ -59,9 +59,9 @@ const Projects = () => {
                             REACT
                         </p></div>
                     <div className="gen-img">
-
                         <ImageDisplay4 />
                     </div>
+
                 </div>
             </div>
 
