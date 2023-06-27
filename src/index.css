@@ -29,6 +29,11 @@ body {
   text-decoration: none;
 }
 
+.gen-link {
+  color: black;
+  text-decoration: none;
+}
+
 a:hover {
   color: #F2D1D1;
 }
@@ -404,5 +409,58 @@ input:focus {
   font-family: 'Inter', sans-serif;
   text-align: center;
   font-style: italic;
+
+}
+
+.project-container {
+
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /*border: 1px solid black;*/
+}
+
+
+.gen-container {
+  /* border: 1px solid red;*/
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gen {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+
+.genesis {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.gen-img {
+  margin-top: 30px;
+}
+
+.bak {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  width: 300px;
+  text-align: center;
+
+
+}
+
+.bak-div {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
 
 }
